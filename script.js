@@ -294,3 +294,39 @@ for (var i=0;i<num.length;i++){ // 2維陣列遍歷
     }
     document.write("<br>");
 }
+
+// class
+class Phone{ // 創建一個模板
+    constructor(number, year, is_waterproof){
+        this.number = number;
+        this.year = year;
+        this.is_waterproof = is_waterproof;
+    }
+    phone_age(){
+        return 2022-this.year;
+    }
+}
+var phone1 = new Phone("123", 2015, false); // 創建一個物件
+var phone2 = new Phone("456", 2019, true);
+document.write(phone1.year);
+document.write("<br>");
+document.write(phone2.phone_age());
+document.write("<br>");
+
+// 如何取得html元素
+document.write();
+window.document.write(); // document.write()是window下的一個物件
+window.prompt("haha"); // prompt()也是window下的一個物件
+var a = 123;
+window.document.write(window.a); // 變數也是window下的一個物件
+// window是全域物件，故可省略
+document.write(); // document負責處理及操作html的東西
+var h1 = document.getElementById("header"); //從ID取得元素
+console.log(h1); // console.log()在主控台顯示
+h1.innerText = "我超帥"; // 修改文字
+h1.style.backgroundColor = "red"; // 修改背景顏色
+h1.style.color = "blue"; // 修改文字顏色
+var link = document.getElementById("link");
+console.log(link);
+link.href = "https://zerojudge.tw/"; // 修改網址
+// 注意程式碼是由上而下執行，故script標籤引入的地方需在欲更改標籤的下方
