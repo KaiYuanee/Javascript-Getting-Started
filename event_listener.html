@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event_listener</title>
+</head>
+<body>
+    <a href="index.html">回主頁</a>
+    <br>
+    <img id="chest" src="Chest.png" width="300px">
+    <button id="btn1" onclick="handle_click(this)">按我</button> <!-- 第一種寫法：從HTML進入Javascript(若使用此方法則須在事件前面加上on) -->
+    <button id="btn2">按我</button> <!-- 第二種寫法：直接在Javascript寫入 -->
+    <!-- onclick偵測按鈕是否被按下、若有則執行handle_click()(this代表該標籤) -->
+    <script src="event_listener.js"></script>
+</body>
+</html>

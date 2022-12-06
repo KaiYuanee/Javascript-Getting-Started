@@ -92,7 +92,7 @@ document.write("<br>");
 var name = prompt("請輸入你的名字："); // 讀取輸入(回傳預設為字串，括號內可寫上字串提示)
 var age = prompt("請輸入你的年紀：");
 document.write("你好啊" + name);
-document.write("你今年" + name + "歲");
+document.write("你今年" + age + "歲");
 document.write("<br>");
 
 var num1 = parseInt(prompt("請輸入數字1："));
